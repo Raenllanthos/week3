@@ -23,8 +23,8 @@ class ROI():
     def math(self):
         print(f"\nYour yearly cash flow is: ${self.cashFlow()}\nYour total investment is: ${self.totalInvestment}")
         roi = 100 * ((self.cashFlow()) / self.totalInvestment)
-        print(f"Your purchased the house for: ${self.property},\nYour yearly ${self.cashFlow()}", 
-        f"investment on your ${self.totalInvestment} property is {roi}%")
+        print(f"Your purchased the house for: ${self.property}\nYour yearly ${self.cashFlow()}", 
+        f"investment on your ${self.totalInvestment} investment is {roi}%")
 
 def main():
     ROI(ROI().getProperty(), ROI().getIncome(), ROI().getExpenses(), ROI().getInvestment()).math()
